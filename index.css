@@ -1,13 +1,30 @@
+/* element */
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+a:link {color:white;text-decoration:none;}		/* 未被访问的链接 */
+a:visited {color:white;text-decoration:none;}	/* 已被访问的链接 */
+a:hover {color:gray;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
+
+.Content a:link {color:black;text-decoration:none;}		/* 未被访问的链接 */
+.Content a:visited {color:black;text-decoration:none;}	/* 已被访问的链接 */
+.Content a:hover {color:red;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+.Content a:active {color:red;text-decoration:none;}	/* 正在被点击的链接 */
+/* class:. */
 .ico1 {
-    margin: 0 0 -73px 0;
+    margin: -10px 0 -70px 0;
 }
 
 .ico2 {
-    margin: -18px 0 -52px 0;
+    margin: -50px 0 -53px 0;
 }
 
 .ico4 {
-    margin: -40px 0 -30px 0;
+    margin: -68px 0 -30px 0;
 }
 
 .ico3 {
@@ -16,11 +33,10 @@
 
 .nav {
     overflow: hidden;
-    padding: 1px 0 4px 0;
-}
-
-span {
-    color: white;
+    width: 1344px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
 }
 
 .nav a {
@@ -29,20 +45,14 @@ span {
 }
 
 .login {
-    position: absolute;
-    right: 10px;
-    top: 0;
+    float: right;
 }
 .login a,span{
     position: relative;
-    top: -2px;
+    top: -4px;
 }
 
-body {
-    background-color: black;
-    padding: 0;
-    margin: 0;
-}
+
 
 .headerBg {
     width: 100%;
@@ -58,7 +68,55 @@ body {
     background: url(static/header_bg.jpg) 1920px 130px;
 }
 .Search form {
-    position: absolute;
-    right:20px;
-    top: 40px;
+    float: right;
+}
+.Navi{
+    height: 53px;
+}
+.Navi ul{
+    float: left;
+}
+.Navi ol{
+    float: right;
+}
+.Navi li{
+    list-style-type: none;
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+.center{
+    margin-left:auto;
+    margin-right:auto;
+    width:1344px;
+}
+.GameLine{
+    width: 1152px;
+    font-size: 14px;
+    margin: auto;
+}
+.GameLineHead{
+    
+    float: left;
+    padding: 14px 5px 14px 5px;
+    background-color: pink;
+}
+.GameLine ul{
+    float: left;
+}
+.GameLine li{
+    list-style-type: none;
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+.FastLink{
+    width: 1248px;
+}
+.Content{
+    height: 5000px;
+    background-image: url("static/defaultbg.jpg");
+    padding: 10px 0 0 0;
+}
+.Main{
+    background-color: white;
+    height: 2000px;
 }

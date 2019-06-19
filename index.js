@@ -22,7 +22,9 @@ var Root = function (_React$Component) {
                 "div",
                 null,
                 React.createElement(Header, null),
-                React.createElement(Search, null)
+                React.createElement(Search, null),
+                React.createElement(Navi, null),
+                React.createElement(Content, null)
             );
         }
     }]);
@@ -52,11 +54,7 @@ var Header = function (_React$Component2) {
                         className: "ico1",
                         src: "static/3dm_top_li.png"
                     }),
-                    React.createElement(
-                        "span",
-                        null,
-                        "\u4E3B\u7AD9"
-                    )
+                    "\u4E3B\u7AD9"
                 ),
                 React.createElement(
                     "a",
@@ -65,11 +63,7 @@ var Header = function (_React$Component2) {
                         className: "ico2",
                         src: "static/3dm_top_li.png"
                     }),
-                    React.createElement(
-                        "span",
-                        null,
-                        "\u5546\u573A"
-                    )
+                    "\u5546\u573A"
                 ),
                 React.createElement(
                     "a",
@@ -78,11 +72,7 @@ var Header = function (_React$Component2) {
                         className: "ico3",
                         src: "static/3dm_top_li.png"
                     }),
-                    React.createElement(
-                        "span",
-                        null,
-                        "\u8BBA\u575B"
-                    )
+                    "\u8BBA\u575B"
                 ),
                 React.createElement(
                     "a",
@@ -91,11 +81,7 @@ var Header = function (_React$Component2) {
                         className: "ico4",
                         src: "static/3dm_top_li.png"
                     }),
-                    React.createElement(
-                        "span",
-                        null,
-                        "\u624B\u673AAPP"
-                    )
+                    "\u624B\u673AAPP"
                 ),
                 React.createElement(
                     "div",
@@ -104,25 +90,13 @@ var Header = function (_React$Component2) {
                     React.createElement(
                         "a",
                         { href: "https://www.baidu.com" },
-                        React.createElement(
-                            "span",
-                            null,
-                            "\u767B\u5F55"
-                        )
+                        "\u767B\u5F55"
                     ),
-                    React.createElement(
-                        "span",
-                        null,
-                        "|"
-                    ),
+                    "|",
                     React.createElement(
                         "a",
                         { href: "https://www.baidu.com" },
-                        React.createElement(
-                            "span",
-                            null,
-                            "\u6CE8\u518C"
-                        )
+                        "\u6CE8\u518C"
                     )
                 )
             );
@@ -147,15 +121,19 @@ var Search = function (_React$Component3) {
             return React.createElement(
                 "div",
                 { className: "Search" },
-                React.createElement("img", { src: "static/logo.png", className: "logo" }),
                 React.createElement(
-                    "form",
-                    null,
-                    React.createElement("input", { type: "text" }),
+                    "div",
+                    { className: "center" },
+                    React.createElement("img", { src: "static/logo.png", className: "logo" }),
                     React.createElement(
-                        "button",
-                        { type: "submit" },
-                        "\u641C\u7D22"
+                        "form",
+                        null,
+                        React.createElement("input", { type: "text" }),
+                        React.createElement(
+                            "button",
+                            { type: "submit" },
+                            "\u641C\u7D22"
+                        )
                     )
                 )
             );
@@ -163,6 +141,243 @@ var Search = function (_React$Component3) {
     }]);
 
     return Search;
+}(React.Component);
+
+var Navi = function (_React$Component4) {
+    _inherits(Navi, _React$Component4);
+
+    function Navi() {
+        _classCallCheck(this, Navi);
+
+        return _possibleConstructorReturn(this, (Navi.__proto__ || Object.getPrototypeOf(Navi)).apply(this, arguments));
+    }
+
+    _createClass(Navi, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "Navi" },
+                React.createElement(
+                    "div",
+                    { className: "center" },
+                    React.createElement(
+                        "ul",
+                        null,
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u65B0\u95FB"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u4E13\u680F"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u5A31\u4E50"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u786C\u4EF6"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u5546\u57CE"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u53D1\u552E\u8868"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u4E0B\u8F7D"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u4E13\u9898"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u8BBA\u575B"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "MOD\u7AD9"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "ol",
+                        null,
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u9996\u9875"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u5355\u673A"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u624B\u6E38"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u7F51\u6E38"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "\u9875\u6E38"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "https://www.baidu.com" },
+                                "H5"
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Navi;
+}(React.Component);
+
+var Content = function (_React$Component5) {
+    _inherits(Content, _React$Component5);
+
+    function Content() {
+        _classCallCheck(this, Content);
+
+        return _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).apply(this, arguments));
+    }
+
+    _createClass(Content, [{
+        key: "render",
+        value: function render() {
+            var gameList = ["歧路旅人", "浮岛物语", "怪物猎人：世界", "刺客信条：奥德赛", "只狼：影逝二度", "雷霆一击", "狂怒2", "鬼泣5", "纪元1800", "瘟疫传说：无罪", "全面战争：三国"];
+            return React.createElement(
+                "div",
+                { className: "Content" },
+                React.createElement(
+                    "div",
+                    { className: "center" },
+                    React.createElement(
+                        "div",
+                        { className: "Main" },
+                        React.createElement(
+                            "div",
+                            { className: "FastLink" },
+                            React.createElement(
+                                "div",
+                                { className: "GameLine" },
+                                React.createElement(
+                                    "a",
+                                    { href: "https://www.baidu.com", className: "GameLineHead" },
+                                    "\u70ED\u95E8\u5355\u673A"
+                                ),
+                                React.createElement(
+                                    "ul",
+                                    null,
+                                    gameList.map(function (item) {
+                                        return React.createElement(
+                                            "li",
+                                            { key: item.toString() },
+                                            React.createElement(
+                                                "a",
+                                                { href: "https://www.baidu.com" },
+                                                item
+                                            )
+                                        );
+                                    })
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Content;
 }(React.Component);
 
 ReactDOM.render(React.createElement(Root, null), document.getElementById("root"));
