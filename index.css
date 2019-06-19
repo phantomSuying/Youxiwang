@@ -1,0 +1,64 @@
+.ico1 {
+    margin: 0 0 -73px 0;
+}
+
+.ico2 {
+    margin: -18px 0 -52px 0;
+}
+
+.ico4 {
+    margin: -40px 0 -30px 0;
+}
+
+.ico3 {
+    margin: -65px 0 -10px 0;
+}
+
+.nav {
+    overflow: hidden;
+    padding: 1px 0 4px 0;
+}
+
+span {
+    color: white;
+}
+
+.nav a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.login {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.login a,span{
+    position: relative;
+    top: -2px;
+}
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.headerBg {
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 300px;
+    top: 40px;
+}
+.Search{
+    padding: 65px 0 65px 0;
+    background: url(static/header_bg.jpg) 1920px 130px;
+}
+.Search form {
+    position: absolute;
+    right:20px;
+    top: 40px;
+}
