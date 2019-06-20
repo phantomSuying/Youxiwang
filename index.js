@@ -334,6 +334,7 @@ var Content = function (_React$Component5) {
         key: "render",
         value: function render() {
             var gameList = ["歧路旅人", "浮岛物语", "怪物猎人：世界", "刺客信条：奥德赛", "只狼：影逝二度", "雷霆一击", "狂怒2", "鬼泣5", "纪元1800", "瘟疫传说：无罪", "全面战争：三国"];
+            var gameList2 = ["王者荣耀", "阴阳师", "一起来捉妖", "地下城与勇士", "FGO", "英雄爱三国", "和平精英", "龙族幻想", "云梦四时歌", "明日方舟", "崩坏3", "碧蓝航线", "恋与制作人"];
             return React.createElement(
                 "div",
                 { className: "Content" },
@@ -358,6 +359,27 @@ var Content = function (_React$Component5) {
                                     "ul",
                                     null,
                                     gameList.map(function (item) {
+                                        return React.createElement(
+                                            "li",
+                                            { key: item.toString() },
+                                            React.createElement(
+                                                "a",
+                                                { href: "https://www.baidu.com" },
+                                                item
+                                            )
+                                        );
+                                    })
+                                ),
+                                React.createElement("br", null),
+                                React.createElement(
+                                    "a",
+                                    { href: "https://www.baidu.com", className: "GameLineHead" },
+                                    "\u624B\u6E38\u5927\u4F5C"
+                                ),
+                                React.createElement(
+                                    "ul",
+                                    null,
+                                    gameList2.map(function (item) {
                                         return React.createElement(
                                             "li",
                                             { key: item.toString() },
