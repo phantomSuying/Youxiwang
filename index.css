@@ -33,7 +33,7 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 
 .nav {
     overflow: hidden;
-    width: 1344px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     height: 25px;
@@ -72,6 +72,9 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 }
 .Navi{
     height: 53px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Navi ul{
     float: left;
@@ -87,7 +90,7 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 .center{
     margin-left:auto;
     margin-right:auto;
-    width:1344px;
+    width:1200px;
 }
 .GameLine{
     width: 1152px;
@@ -97,7 +100,7 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 .GameLineHead{
     
     float: left;
-    padding: 14px 5px 14px 5px;
+    padding: 12px 5px 12px 5px;
     background-color: pink;
 }
 .GameLine ul{

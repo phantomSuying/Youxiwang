@@ -2,10 +2,10 @@ class Root extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
-                <Search/>
-                <Navi/>
-                <Content/>
+                <Header />
+                <Search />
+                <Navi />
+                <Content />
             </div>
         );
     }
@@ -44,7 +44,7 @@ class Header extends React.Component {
                     手机APP
                 </a>
                 <div className="login">
-                    <img src="static/ioc-ren.png"/>
+                    <img src="static/ioc-ren.png" />
                     <a href="https://www.baidu.com">登录</a>
                     |
                     <a href="https://www.baidu.com">注册</a>
@@ -59,9 +59,9 @@ class Search extends React.Component {
         return (
             <div className="Search">
                 <div className="center">
-                    <img src="static/logo.png" className="logo"/>
+                    <img src="static/logo.png" className="logo" />
                     <form>
-                        <input type="text"/>
+                        <input type="text" />
                         <button type="submit">搜索</button>
                     </form>
                 </div>
@@ -108,6 +108,8 @@ class Content extends React.Component {
             "雷霆一击", "狂怒2", "鬼泣5", "纪元1800", "瘟疫传说：无罪", "全面战争：三国"];
         const gameList2 = ["王者荣耀", "阴阳师", "一起来捉妖", "地下城与勇士", "FGO", "英雄爱三国", "和平精英",
             "龙族幻想", "云梦四时歌", "明日方舟", "崩坏3", "碧蓝航线", "恋与制作人"];
+        const gameList3 = ["失落的方舟", "无畏", "武侠乂", "英雄联盟", "地下城与勇士", "堡垒之夜", "无限法则", "权御天下",
+            "剑网3", "古剑奇谭OL", "魔兽世界", "逆战", "天涯明月刀", "绝地求生"];
         return (
             <div className="Content">
                 <div className="center">
@@ -118,20 +120,39 @@ class Content extends React.Component {
                                 <ul>
                                     {
                                         gameList.map((item) => (
-                                                <li key={item.toString()}>
-                                                    <a href="https://www.baidu.com">{item}</a>
-                                                </li>)
+                                            <li key={item.toString()}>
+                                                <a href="https://www.baidu.com">{item}</a>
+                                            </li>)
                                         )
                                     }
                                 </ul>
-                                <br/>
                                 <a href="https://www.baidu.com" className="GameLineHead">手游大作</a>
                                 <ul>
                                     {
                                         gameList2.map((item) => (
-                                                <li key={item.toString()}>
-                                                    <a href="https://www.baidu.com">{item}</a>
-                                                </li>)
+                                            <li key={item.toString()}>
+                                                <a href="https://www.baidu.com">{item}</a>
+                                            </li>)
+                                        )
+                                    }
+                                </ul>
+                                <a href="https://www.baidu.com" className="GameLineHead">大型网游</a>
+                                <ul>
+                                    {
+                                        gameList3.map((item) => (
+                                            <li key={item.toString()}>
+                                                <a href="https://www.baidu.com">{item}</a>
+                                            </li>)
+                                        )
+                                    }
+                                </ul>
+                                <a href="https://www.baidu.com" className="GameLineHead">手游大作</a>
+                                <ul>
+                                    {
+                                        gameList2.map((item) => (
+                                            <li key={item.toString()}>
+                                                <a href="https://www.baidu.com">{item}</a>
+                                            </li>)
                                         )
                                     }
                                 </ul>
@@ -144,4 +165,4 @@ class Content extends React.Component {
     }
 }
 
-ReactDOM.render(<Root/>, document.getElementById("root"));
+ReactDOM.render(<Root />, document.getElementById("root"));
