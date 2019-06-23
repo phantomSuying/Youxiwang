@@ -78,6 +78,7 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 }
 .Navi ul{
     float: left;
+    padding-inline-start: 0;
 }
 .Navi ol{
     float: right;
@@ -94,14 +95,16 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 }
 .GameLine{
     width: 1152px;
-    font-size: 14px;
+    font-size: 12px;
     margin: auto;
+    height: 42px;
 }
 .GameLineHead{
-    
-    float: left;
-    padding: 12px 5px 12px 5px;
+    padding: 5px 12px 5px 12px;
     background-color: pink;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .GameLine ul{
     float: left;
@@ -112,7 +115,7 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     padding: 5px 10px 5px 10px;
 }
 .FastLink{
-    width: 1248px;
+    width: 1200px;
 }
 .Content{
     height: 5000px;
@@ -122,4 +125,30 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 .Main{
     background-color: white;
     height: 2000px;
+}
+.top{
+    background: orange;
+    padding: 5px 0 5px 0;
+}
+.top a{
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+}
+.InnerL{
+    float: left;
+    width: 400px;
+    height: 1000px;
+    background-color: aqua;
+}
+.InnerM{
+    float: left;
+    width: 400px;
+    height: 1000px;
+}
+.InnerR{
+    float: left;
+    width: 400px;
+    height: 1000px;
+    background-color: mediumaquamarine;
 }

@@ -1,4 +1,13 @@
 class Root extends React.Component {
+    componentDidMount() {
+        window.addEventListener("resize", (e) => {
+            if (window.innerWidth < 1200) {
+                document.body.style.width = "1200px";
+            } else {
+                document.body.style.width = "auto";
+            }
+        });
+    }
     render() {
         return (
             <div>
@@ -101,7 +110,24 @@ class Navi extends React.Component {
         );
     }
 }
-
+class GameLine extends React.Component {
+    render() {
+        return (
+            <div className="GameLine">
+                <a href="https://www.baidu.com" className="GameLineHead">{this.props.name}</a>
+                <ul>
+                    {
+                        this.props.gameList.map((item) => (
+                            <li key={item.toString()}>
+                                <a href="https://www.baidu.com">{item}</a>
+                            </li>)
+                        )
+                    }
+                </ul>
+            </div>
+        );
+    }
+}
 class Content extends React.Component {
     render() {
         const gameList = ["歧路旅人", "浮岛物语", "怪物猎人：世界", "刺客信条：奥德赛", "只狼：影逝二度",
@@ -110,52 +136,45 @@ class Content extends React.Component {
             "龙族幻想", "云梦四时歌", "明日方舟", "崩坏3", "碧蓝航线", "恋与制作人"];
         const gameList3 = ["失落的方舟", "无畏", "武侠乂", "英雄联盟", "地下城与勇士", "堡垒之夜", "无限法则", "权御天下",
             "剑网3", "古剑奇谭OL", "魔兽世界", "逆战", "天涯明月刀", "绝地求生"];
+        const gameList4 = ["暴走萌姬", "三十六计", "绯雨骑士团", "三国杀", "武林三", "唐门六道", "荒野求生", "文字修真",
+            "斗罗大陆", "妖怪宝可萌", "王的崛起", "我和我的影子"];
+        const gameList5 = ["仙剑奇侠传七", "沉没之城", "骑马与砍杀2", "幽灵行动：断点", "赛博朋克2077", "轩辕剑7",
+            "无主之地3", "暗黑血统：创世纪", "血污：夜之仪式", "丝绸之歌", "魔兽争霸3"];
+        const gameList6 = ["怪猎", "圣女战旗", "堡垒之夜", "武魂2", "地下城与勇士", "腾讯电竞", "FIFA ONLINE 4",
+            "完美世界手游", "只狼", "生化危机2重制版", "全面战争三国", "使命召唤16"];
         return (
             <div className="Content">
                 <div className="center">
                     <div className="Main">
                         <div className="FastLink">
-                            <div className="GameLine">
-                                <a href="https://www.baidu.com" className="GameLineHead">热门单机</a>
-                                <ul>
-                                    {
-                                        gameList.map((item) => (
-                                            <li key={item.toString()}>
-                                                <a href="https://www.baidu.com">{item}</a>
-                                            </li>)
-                                        )
-                                    }
-                                </ul>
-                                <a href="https://www.baidu.com" className="GameLineHead">手游大作</a>
-                                <ul>
-                                    {
-                                        gameList2.map((item) => (
-                                            <li key={item.toString()}>
-                                                <a href="https://www.baidu.com">{item}</a>
-                                            </li>)
-                                        )
-                                    }
-                                </ul>
-                                <a href="https://www.baidu.com" className="GameLineHead">大型网游</a>
-                                <ul>
-                                    {
-                                        gameList3.map((item) => (
-                                            <li key={item.toString()}>
-                                                <a href="https://www.baidu.com">{item}</a>
-                                            </li>)
-                                        )
-                                    }
-                                </ul>
-                                <a href="https://www.baidu.com" className="GameLineHead">手游大作</a>
-                                <ul>
-                                    {
-                                        gameList2.map((item) => (
-                                            <li key={item.toString()}>
-                                                <a href="https://www.baidu.com">{item}</a>
-                                            </li>)
-                                        )
-                                    }
-                                </ul>
+                            <GameLine name="热门单机" gameList={gameList} />
+                            <GameLine name="手游大作" gameList={gameList2} />
+                            <GameLine name="大型网游" gameList={gameList3} />
+                            <GameLine name="推荐页游" gameList={gameList4} />
+                            <GameLine name="即将上市" gameList={gameList5} />
+                            <GameLine name="游戏活动" gameList={gameList6} />
+                        </div>
+                        <div className="top">
+                            <a>正版促销</a>
+                            <a>热门专区</a>
+                            <a>游戏排行榜</a>
+                            <a>补丁工具</a>
+                            <a>游戏网汉化</a>
+                            <a>标签合集</a>
+                            <a>一周话题</a>
+                            <a>汉化手游</a>
+                            <a>手游周推</a>
+                            <a>网友开测</a>
+                        </div>
+                        <div className="InnerContent">
+                            <div className="InnerL">
+                                
+                            </div>
+                            <div className="InnerM">
+
+                            </div>
+                            <div className="InnerR">
+
                             </div>
                         </div>
                     </div>
