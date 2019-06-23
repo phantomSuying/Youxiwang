@@ -374,8 +374,108 @@ var GameLine = function (_React$Component5) {
     return GameLine;
 }(React.Component);
 
-var Content = function (_React$Component6) {
-    _inherits(Content, _React$Component6);
+var Ban = function (_React$Component6) {
+    _inherits(Ban, _React$Component6);
+
+    function Ban(props) {
+        _classCallCheck(this, Ban);
+
+        var _this6 = _possibleConstructorReturn(this, (Ban.__proto__ || Object.getPrototypeOf(Ban)).call(this, props));
+
+        _this6.state = {
+            focusItem: 0,
+            images: ["static/car.jpg", "static/cyber.jpg", "static/eldenRing.jpg", "static/mario.jpg", "static/noMaster.jpg"]
+        };
+        return _this6;
+    }
+
+    _createClass(Ban, [{
+        key: "tick",
+        value: function tick() {
+            this.setState(function (state) {
+                return {
+                    focusItem: (state.focusItem + 1) % 5
+                };
+            });
+            document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid red 1px";
+            document.getElementsByClassName("ban")[0].style.backgroundImage = "url(" + this.state.images[this.state.focusItem] + ")";
+            document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem == 0 ? 4 : this.state.focusItem - 1].style.border = "solid transparent 1px";
+        }
+    }, {
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            var _this7 = this;
+
+            document.getElementsByClassName("ban")[0].childNodes[0].style.border = "solid red 1px";
+            document.getElementsByClassName("ban")[0].style.backgroundImage = "url(static/car.jpg)";
+            this.timerId = setInterval(function () {
+                return _this7.tick();
+            }, 3000);
+        }
+    }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+            clearInterval(this.timerId);
+        }
+    }, {
+        key: "handleMouseOver",
+        value: function handleMouseOver(id, e) {
+            document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid transparent 1px";
+            this.setState({
+                focusItem: id
+            });
+            e.target.style.border = "solid red 1px";
+            document.getElementsByClassName("ban")[0].style.backgroundImage = "url(" + this.state.images[id] + ")";
+        }
+    }, {
+        key: "handleMouseOut",
+        value: function handleMouseOut(id, e) {
+            e.target.style.border = "solid transparent 1px";
+            document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid red 1px";
+            document.getElementsByClassName("ban")[0].style.backgroundImage = "url(" + this.state.images[this.state.focusItem] + ")";
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var _this8 = this;
+
+            return React.createElement(
+                "div",
+                { className: "ban" },
+                React.createElement("img", { src: "static\\car.jpg", onMouseOver: function onMouseOver(e) {
+                        return _this8.handleMouseOver(0, e);
+                    }, onMouseOut: function onMouseOut(e) {
+                        return _this8.handleMouseOut(0, e);
+                    } }),
+                React.createElement("img", { src: "static\\cyber.jpg", onMouseOver: function onMouseOver(e) {
+                        return _this8.handleMouseOver(1, e);
+                    }, onMouseOut: function onMouseOut(e) {
+                        return _this8.handleMouseOut(1, e);
+                    } }),
+                React.createElement("img", { src: "static\\eldenRing.jpg", onMouseOver: function onMouseOver(e) {
+                        return _this8.handleMouseOver(2, e);
+                    }, onMouseOut: function onMouseOut(e) {
+                        return _this8.handleMouseOut(2, e);
+                    } }),
+                React.createElement("img", { src: "static\\mario.jpg", onMouseOver: function onMouseOver(e) {
+                        return _this8.handleMouseOver(3, e);
+                    }, onMouseOut: function onMouseOut(e) {
+                        return _this8.handleMouseOut(3, e);
+                    } }),
+                React.createElement("img", { src: "static\\noMaster.jpg", onMouseOver: function onMouseOver(e) {
+                        return _this8.handleMouseOver(4, e);
+                    }, onMouseOut: function onMouseOut(e) {
+                        return _this8.handleMouseOut(4, e);
+                    } })
+            );
+        }
+    }]);
+
+    return Ban;
+}(React.Component);
+
+var Content = function (_React$Component7) {
+    _inherits(Content, _React$Component7);
 
     function Content() {
         _classCallCheck(this, Content);
@@ -392,6 +492,7 @@ var Content = function (_React$Component6) {
             var gameList4 = ["暴走萌姬", "三十六计", "绯雨骑士团", "三国杀", "武林三", "唐门六道", "荒野求生", "文字修真", "斗罗大陆", "妖怪宝可萌", "王的崛起", "我和我的影子"];
             var gameList5 = ["仙剑奇侠传七", "沉没之城", "骑马与砍杀2", "幽灵行动：断点", "赛博朋克2077", "轩辕剑7", "无主之地3", "暗黑血统：创世纪", "血污：夜之仪式", "丝绸之歌", "魔兽争霸3"];
             var gameList6 = ["怪猎", "圣女战旗", "堡垒之夜", "武魂2", "地下城与勇士", "腾讯电竞", "FIFA ONLINE 4", "完美世界手游", "只狼", "生化危机2重制版", "全面战争三国", "使命召唤16"];
+
             return React.createElement(
                 "div",
                 { className: "Content" },
@@ -468,7 +569,11 @@ var Content = function (_React$Component6) {
                         React.createElement(
                             "div",
                             { className: "InnerContent" },
-                            React.createElement("div", { className: "InnerL" }),
+                            React.createElement(
+                                "div",
+                                { className: "InnerL" },
+                                React.createElement(Ban, null)
+                            ),
                             React.createElement("div", { className: "InnerM" }),
                             React.createElement("div", { className: "InnerR" })
                         )

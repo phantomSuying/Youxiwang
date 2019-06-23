@@ -137,13 +137,13 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 }
 .InnerL{
     float: left;
-    width: 400px;
+    width: 412px;
     height: 1000px;
     background-color: aqua;
 }
 .InnerM{
     float: left;
-    width: 400px;
+    width: 388px;
     height: 1000px;
 }
 .InnerR{
@@ -151,4 +151,14 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     width: 400px;
     height: 1000px;
     background-color: mediumaquamarine;
+}
+.ban img{
+    width: 77px;
+    height: 54px;
+    border: solid transparent 1px;
+    margin: 0 1px 0 2px;
+}
+.ban{
+    width: 412px;
+    height: 380px;
 }

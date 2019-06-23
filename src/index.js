@@ -128,6 +128,58 @@ class GameLine extends React.Component {
         );
     }
 }
+class Ban extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            focusItem: 0,
+            images:["static/car.jpg","static/cyber.jpg","static/eldenRing.jpg","static/mario.jpg","static/noMaster.jpg"]
+        }
+    }
+    tick() {
+        this.setState((state) => ({
+            focusItem: (state.focusItem + 1) % 5
+        }));
+        document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid red 1px";
+        document.getElementsByClassName("ban")[0].style.backgroundImage="url("+this.state.images[this.state.focusItem]+")";
+        document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem == 0 ? 4 : this.state.focusItem - 1].style.border = "solid transparent 1px";
+    }
+    componentDidMount() {
+        document.getElementsByClassName("ban")[0].childNodes[0].style.border = "solid red 1px";
+        document.getElementsByClassName("ban")[0].style.backgroundImage="url(static/car.jpg)";
+        this.timerId = setInterval(
+            () => this.tick(),
+            3000
+        );
+    }
+    componentWillUnmount() {
+        clearInterval(this.timerId);
+    }
+    handleMouseOver(id, e) {
+        document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid transparent 1px";
+        this.setState({
+            focusItem: id
+        });
+        e.target.style.border = "solid red 1px";
+        document.getElementsByClassName("ban")[0].style.backgroundImage="url("+this.state.images[id]+")";
+    }
+    handleMouseOut(id, e) {
+        e.target.style.border = "solid transparent 1px";
+        document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid red 1px";
+        document.getElementsByClassName("ban")[0].style.backgroundImage="url("+this.state.images[this.state.focusItem]+")";
+    }
+    render() {
+        return (
+            <div className="ban">
+                <img src="static\car.jpg" onMouseOver={(e) => this.handleMouseOver(0, e)} onMouseOut={(e) => this.handleMouseOut(0, e)} />
+                <img src="static\cyber.jpg" onMouseOver={(e) => this.handleMouseOver(1, e)} onMouseOut={(e) => this.handleMouseOut(1, e)} />
+                <img src="static\eldenRing.jpg" onMouseOver={(e) => this.handleMouseOver(2, e)} onMouseOut={(e) => this.handleMouseOut(2, e)} />
+                <img src="static\mario.jpg" onMouseOver={(e) => this.handleMouseOver(3, e)} onMouseOut={(e) => this.handleMouseOut(3, e)} />
+                <img src="static\noMaster.jpg" onMouseOver={(e) => this.handleMouseOver(4, e)} onMouseOut={(e) => this.handleMouseOut(4, e)} />
+            </div>
+        );
+    }
+}
 class Content extends React.Component {
     render() {
         const gameList = ["歧路旅人", "浮岛物语", "怪物猎人：世界", "刺客信条：奥德赛", "只狼：影逝二度",
@@ -142,6 +194,7 @@ class Content extends React.Component {
             "无主之地3", "暗黑血统：创世纪", "血污：夜之仪式", "丝绸之歌", "魔兽争霸3"];
         const gameList6 = ["怪猎", "圣女战旗", "堡垒之夜", "武魂2", "地下城与勇士", "腾讯电竞", "FIFA ONLINE 4",
             "完美世界手游", "只狼", "生化危机2重制版", "全面战争三国", "使命召唤16"];
+
         return (
             <div className="Content">
                 <div className="center">
@@ -168,7 +221,7 @@ class Content extends React.Component {
                         </div>
                         <div className="InnerContent">
                             <div className="InnerL">
-                                
+                                <Ban />
                             </div>
                             <div className="InnerM">
 
