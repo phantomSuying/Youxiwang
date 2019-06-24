@@ -221,3 +221,39 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     margin: 5px 0 5px 0;
     text-align: center;
 }
+.vote{
+    height: 100px;
+}
+.vote img{
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+.vote a div{
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+}
+.brief{
+    float: left;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+}
+.sliver{
+    background-color: lightgray;
+    height: 10px;
+    width: 300px;
+    float: left;
+}
+.voteNum{
+    float: left;
+    width: 66px;
+}
+.VoteLi button{
+    float: right;
+}
+.VoteLi p{
+    font-size: 12px;
+}

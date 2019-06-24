@@ -624,6 +624,33 @@ var Content = function (_React$Component7) {
                                         content: "\u300A\u5F69\u4EAC\u7CBE\u9009Vol.3\u300B\u8BC4\u6D4B\uFF1A\u65F6\u5149\u98DE\u901D\uFF0C\u56DE\u5FC6\u5E38\u5B58\u300A\u5F69\u4EAC\u7CBE\u9009Vol.3\u300B\u8BC4\u6D4B\uFF1A\u65F6\u5149\u98DE\u901D\uFF0C\u56DE\u5FC6\u5E38\u5B58",
                                         grade: "7.5"
                                     })
+                                ),
+                                React.createElement(
+                                    "div",
+                                    null,
+                                    React.createElement(Title, { name: "\u4E89\u8BAE\u6295\u7968" }),
+                                    React.createElement(
+                                        "div",
+                                        { className: "vote" },
+                                        React.createElement(
+                                            "a",
+                                            { href: "https://www.baidu.com" },
+                                            React.createElement("img", { src: "static\\car.jpg" }),
+                                            React.createElement(
+                                                "div",
+                                                null,
+                                                "\u4F60\u600E\u4E48\u770B\u5728\u6E38\u620F\u4E2D\u6253MOD\u7684\u884C\u4E3A\uFF1F\u4F60\u600E\u4E48\u770B\u5728\u6E38\u620F\u4E2D\u6253MOD\u7684\u884C\u4E3A\uFF1F"
+                                            )
+                                        ),
+                                        React.createElement(
+                                            "div",
+                                            { className: "brief" },
+                                            "\u7B2C\u4E09\u65B9MOD\u548C\u6E38\u620F\u672C\u4F53\u603B\u6709\u90A3\u4E48\u4E9B\u8BF4\u4E0D\u6E05\u9053\u4E0D\u660E\u7684\u5173\u7CFB\uFF0C\u800C\u70ED\u95E8\u6E38\u620F\u53C8\u603B\u4F1A\u884D\u751F\u51FA\u8BB8\u591A\u7531\u7B2C\u4E09\u65B9\u7231\u597D\u8005\u521B\u9020"
+                                        )
+                                    ),
+                                    React.createElement(VoteLi, { color: "blue", number: "18", all: "187", content: "\u6211\u77E5\u9053\u4F46\u6211\u4E0D\u7528MOD\uFF0C\u6E38\u620F\u4E0D\u5E94\u8BE5\u90A3\u4E48\u82B1\u91CC\u80E1\u54E8\u3002" }),
+                                    React.createElement(VoteLi, { color: "red", number: "159", all: "187", content: "\u6211\u4E00\u76F4\u4F7F\u7528\u6E38\u620FMOD\uFF0C\u8FD9\u4F7F\u6211\u73A9\u6E38\u620F\u7684\u8DA3\u5473\u6027\u5927\u5927\u589E\u52A0\u3002" }),
+                                    React.createElement(VoteLi, { color: "green", number: "10", all: "187", content: "\u6211\u4E0D\u77E5\u9053\u4E5F\u4E0D\u5173\u5FC3\u6E38\u620FMOD\uFF0C\u548C\u6211\u6CA1\u5173\u7CFB\u3002" })
                                 )
                             ),
                             React.createElement("div", { className: "InnerM" }),
@@ -698,6 +725,52 @@ var Evaluation = function (_React$Component9) {
     }]);
 
     return Evaluation;
+}(React.Component);
+
+var VoteLi = function (_React$Component10) {
+    _inherits(VoteLi, _React$Component10);
+
+    function VoteLi() {
+        _classCallCheck(this, VoteLi);
+
+        return _possibleConstructorReturn(this, (VoteLi.__proto__ || Object.getPrototypeOf(VoteLi)).apply(this, arguments));
+    }
+
+    _createClass(VoteLi, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "VoteLi" },
+                React.createElement(
+                    "div",
+                    { className: "sliver" },
+                    React.createElement("div", { style: {
+                            backgroundColor: this.props.color,
+                            width: 100 * this.props.number / this.props.all + '%',
+                            height: 10
+                        } })
+                ),
+                React.createElement(
+                    "div",
+                    { className: "voteNum" },
+                    this.props.number
+                ),
+                React.createElement(
+                    "button",
+                    null,
+                    "\u6295\u7968"
+                ),
+                React.createElement(
+                    "p",
+                    null,
+                    this.props.content
+                )
+            );
+        }
+    }]);
+
+    return VoteLi;
 }(React.Component);
 
 ReactDOM.render(React.createElement(Root, null), document.getElementById("root"));

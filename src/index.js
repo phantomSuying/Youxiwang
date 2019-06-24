@@ -256,6 +256,23 @@ class Content extends React.Component {
                                         grade="7.5"
                                     />
                                 </div>
+                                <div>
+                                    <Title name="争议投票" />
+                                    <div className="vote">
+                                        <a href="https://www.baidu.com">
+                                            <img src="static\car.jpg" />
+                                            <div>
+                                                你怎么看在游戏中打MOD的行为？你怎么看在游戏中打MOD的行为？
+                                            </div>
+                                        </a>
+                                        <div className="brief">
+                                            第三方MOD和游戏本体总有那么些说不清道不明的关系，而热门游戏又总会衍生出许多由第三方爱好者创造
+                                        </div>
+                                    </div>
+                                    <VoteLi color="blue" number="18" all="187" content="我知道但我不用MOD，游戏不应该那么花里胡哨。" />
+                                    <VoteLi color="red" number="159" all="187" content="我一直使用游戏MOD，这使我玩游戏的趣味性大大增加。" />
+                                    <VoteLi color="green" number="10" all="187" content="我不知道也不关心游戏MOD，和我没关系。" />
+                                </div>
                             </div>
                             <div className="InnerM">
 
@@ -285,13 +302,35 @@ class Evaluation extends React.Component {
     render() {
         return (
             <div className="Evaluation">
-                <img src={this.props.src}/>
+                <img src={this.props.src} />
                 <div className="ed1">
                     {this.props.content}
                 </div>
                 <div className="ed2">
                     {this.props.grade}
                 </div>
+            </div>
+        );
+    }
+}
+class VoteLi extends React.Component {
+    render() {
+        return (
+            <div className="VoteLi">
+                <div className="sliver">
+                    <div style={{
+                        backgroundColor: this.props.color,
+                        width: 100 * this.props.number / this.props.all + '%',
+                        height: 10,
+                    }}>
+                    </div>
+                </div>
+                <div className="voteNum">
+                    {this.props.number}
+                </div>
+                <button>投票</button>
+                <p>{this.props.content}</p>
+
             </div>
         );
     }
