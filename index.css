@@ -14,6 +14,11 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 .Content a:visited {color:black;text-decoration:none;}	/* 已被访问的链接 */
 .Content a:hover {color:red;text-decoration:none;}	/* 鼠标指针移动到链接上 */
 .Content a:active {color:red;text-decoration:none;}	/* 正在被点击的链接 */
+
+.twhi a:link {color:gray;text-decoration:none;}		/* 未被访问的链接 */
+.twhi a:visited {color:gray;text-decoration:none;}	/* 已被访问的链接 */
+.twhi a:hover {color:white;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+.twhi a:active {color:white;text-decoration:none;}	/* 正在被点击的链接 */
 /* class:. */
 .ico1 {
     margin: -10px 0 -70px 0;
@@ -157,8 +162,17 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     height: 54px;
     border: solid transparent 1px;
     margin: 0 1px 0 2px;
+    position: relative;
+    top: 80%;
 }
 .ban{
     width: 412px;
     height: 380px;
+}
+.transBack{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 412px;
+    height: 120px;
+    top: 761px;
 }

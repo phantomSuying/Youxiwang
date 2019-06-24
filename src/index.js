@@ -132,21 +132,22 @@ class Ban extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            focusItem: 0,
-            images:["static/car.jpg","static/cyber.jpg","static/eldenRing.jpg","static/mario.jpg","static/noMaster.jpg"]
+            focusItem: 1,
+            images: ["static/car.jpg", "static/cyber.jpg", "static/eldenRing.jpg", "static/mario.jpg", "static/noMaster.jpg"],
+            texts: ["car", "cyber", "eldenRing", "mario", "noMaster"]
         }
     }
     tick() {
         this.setState((state) => ({
-            focusItem: (state.focusItem + 1) % 5
+            focusItem: (state.focusItem) % 5 + 1
         }));
         document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid red 1px";
-        document.getElementsByClassName("ban")[0].style.backgroundImage="url("+this.state.images[this.state.focusItem]+")";
-        document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem == 0 ? 4 : this.state.focusItem - 1].style.border = "solid transparent 1px";
+        document.getElementsByClassName("ban")[0].style.backgroundImage = "url(" + this.state.images[this.state.focusItem - 1] + ")";
+        document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem == 1 ? 5 : this.state.focusItem - 1].style.border = "solid transparent 1px";
     }
     componentDidMount() {
-        document.getElementsByClassName("ban")[0].childNodes[0].style.border = "solid red 1px";
-        document.getElementsByClassName("ban")[0].style.backgroundImage="url(static/car.jpg)";
+        document.getElementsByClassName("ban")[0].childNodes[1].style.border = "solid red 1px";
+        document.getElementsByClassName("ban")[0].style.backgroundImage = "url(static/car.jpg)";
         this.timerId = setInterval(
             () => this.tick(),
             3000
@@ -161,21 +162,28 @@ class Ban extends React.Component {
             focusItem: id
         });
         e.target.style.border = "solid red 1px";
-        document.getElementsByClassName("ban")[0].style.backgroundImage="url("+this.state.images[id]+")";
+        document.getElementsByClassName("ban")[0].style.backgroundImage = "url(" + this.state.images[id - 1] + ")";
     }
     handleMouseOut(id, e) {
         e.target.style.border = "solid transparent 1px";
         document.getElementsByClassName("ban")[0].childNodes[this.state.focusItem].style.border = "solid red 1px";
-        document.getElementsByClassName("ban")[0].style.backgroundImage="url("+this.state.images[this.state.focusItem]+")";
+        document.getElementsByClassName("ban")[0].style.backgroundImage = "url(" + this.state.images[this.state.focusItem - 1] + ")";
     }
     render() {
         return (
-            <div className="ban">
-                <img src="static\car.jpg" onMouseOver={(e) => this.handleMouseOver(0, e)} onMouseOut={(e) => this.handleMouseOut(0, e)} />
-                <img src="static\cyber.jpg" onMouseOver={(e) => this.handleMouseOver(1, e)} onMouseOut={(e) => this.handleMouseOut(1, e)} />
-                <img src="static\eldenRing.jpg" onMouseOver={(e) => this.handleMouseOver(2, e)} onMouseOut={(e) => this.handleMouseOut(2, e)} />
-                <img src="static\mario.jpg" onMouseOver={(e) => this.handleMouseOver(3, e)} onMouseOut={(e) => this.handleMouseOut(3, e)} />
-                <img src="static\noMaster.jpg" onMouseOver={(e) => this.handleMouseOver(4, e)} onMouseOut={(e) => this.handleMouseOut(4, e)} />
+            <div className="twhi">
+                <a href={"https://www.baidu.com/s?wd=" + this.state.focusItem}>
+                    <div className="ban" >
+                        <div className="transBack">
+                            <p>{this.state.texts[this.state.focusItem - 1]}</p>
+                        </div>
+                        <img src="static\car.jpg" onMouseOver={(e) => this.handleMouseOver(1, e)} onMouseOut={(e) => this.handleMouseOut(1, e)} alt="car" />
+                        <img src="static\cyber.jpg" onMouseOver={(e) => this.handleMouseOver(2, e)} onMouseOut={(e) => this.handleMouseOut(2, e)} alt="cyber" />
+                        <img src="static\eldenRing.jpg" onMouseOver={(e) => this.handleMouseOver(3, e)} onMouseOut={(e) => this.handleMouseOut(3, e)} alt="eldenRing" />
+                        <img src="static\mario.jpg" onMouseOver={(e) => this.handleMouseOver(4, e)} onMouseOut={(e) => this.handleMouseOut(4, e)} alt="mario" />
+                        <img src="static\noMaster.jpg" onMouseOver={(e) => this.handleMouseOver(5, e)} onMouseOut={(e) => this.handleMouseOut(5, e)} alt="noMaster" />
+                    </div>
+                </a>
             </div>
         );
     }
