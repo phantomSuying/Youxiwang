@@ -230,6 +230,32 @@ class Content extends React.Component {
                         <div className="InnerContent">
                             <div className="InnerL">
                                 <Ban />
+                                <div>
+                                    <Title name="游戏评测" />
+                                    <div className="dota">
+                                        <a href="https://www.baidu.com">
+                                            《刀塔霸业》评测
+                                        </a>
+                                        <div>
+                                            7.5分
+                                        </div>
+                                    </div>
+                                    <Evaluation
+                                        src="static\car.jpg"
+                                        content="《尸灵》评测：一段旅行，一场救赎《尸灵》评测：一段旅行，一场救赎"
+                                        grade="7.5"
+                                    />
+                                    <Evaluation
+                                        src="static\car.jpg"
+                                        content="《神力科莎：竞速》评测：实至名归的年度最真实赛车游戏《神力科莎：竞速》评测：实至名归的年度最真实赛车游戏"
+                                        grade="7.5"
+                                    />
+                                    <Evaluation
+                                        src="static\car.jpg"
+                                        content="《彩京精选Vol.3》评测：时光飞逝，回忆常存《彩京精选Vol.3》评测：时光飞逝，回忆常存"
+                                        grade="7.5"
+                                    />
+                                </div>
                             </div>
                             <div className="InnerM">
 
@@ -239,6 +265,32 @@ class Content extends React.Component {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        );
+    }
+}
+class Title extends React.Component {
+    render() {
+        return (
+            <div className="Title">
+                {this.props.name}
+                <a href="https://www.baidu.com">更多</a>
+                <hr />
+            </div>
+        );
+    }
+}
+class Evaluation extends React.Component {
+    render() {
+        return (
+            <div className="Evaluation">
+                <img src={this.props.src}/>
+                <div className="ed1">
+                    {this.props.content}
+                </div>
+                <div className="ed2">
+                    {this.props.grade}
                 </div>
             </div>
         );

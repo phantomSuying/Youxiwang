@@ -590,7 +590,41 @@ var Content = function (_React$Component7) {
                             React.createElement(
                                 "div",
                                 { className: "InnerL" },
-                                React.createElement(Ban, null)
+                                React.createElement(Ban, null),
+                                React.createElement(
+                                    "div",
+                                    null,
+                                    React.createElement(Title, { name: "\u6E38\u620F\u8BC4\u6D4B" }),
+                                    React.createElement(
+                                        "div",
+                                        { className: "dota" },
+                                        React.createElement(
+                                            "a",
+                                            { href: "https://www.baidu.com" },
+                                            "\u300A\u5200\u5854\u9738\u4E1A\u300B\u8BC4\u6D4B"
+                                        ),
+                                        React.createElement(
+                                            "div",
+                                            null,
+                                            "7.5\u5206"
+                                        )
+                                    ),
+                                    React.createElement(Evaluation, {
+                                        src: "static\\car.jpg",
+                                        content: "\u300A\u5C38\u7075\u300B\u8BC4\u6D4B\uFF1A\u4E00\u6BB5\u65C5\u884C\uFF0C\u4E00\u573A\u6551\u8D4E\u300A\u5C38\u7075\u300B\u8BC4\u6D4B\uFF1A\u4E00\u6BB5\u65C5\u884C\uFF0C\u4E00\u573A\u6551\u8D4E",
+                                        grade: "7.5"
+                                    }),
+                                    React.createElement(Evaluation, {
+                                        src: "static\\car.jpg",
+                                        content: "\u300A\u795E\u529B\u79D1\u838E\uFF1A\u7ADE\u901F\u300B\u8BC4\u6D4B\uFF1A\u5B9E\u81F3\u540D\u5F52\u7684\u5E74\u5EA6\u6700\u771F\u5B9E\u8D5B\u8F66\u6E38\u620F\u300A\u795E\u529B\u79D1\u838E\uFF1A\u7ADE\u901F\u300B\u8BC4\u6D4B\uFF1A\u5B9E\u81F3\u540D\u5F52\u7684\u5E74\u5EA6\u6700\u771F\u5B9E\u8D5B\u8F66\u6E38\u620F",
+                                        grade: "7.5"
+                                    }),
+                                    React.createElement(Evaluation, {
+                                        src: "static\\car.jpg",
+                                        content: "\u300A\u5F69\u4EAC\u7CBE\u9009Vol.3\u300B\u8BC4\u6D4B\uFF1A\u65F6\u5149\u98DE\u901D\uFF0C\u56DE\u5FC6\u5E38\u5B58\u300A\u5F69\u4EAC\u7CBE\u9009Vol.3\u300B\u8BC4\u6D4B\uFF1A\u65F6\u5149\u98DE\u901D\uFF0C\u56DE\u5FC6\u5E38\u5B58",
+                                        grade: "7.5"
+                                    })
+                                )
                             ),
                             React.createElement("div", { className: "InnerM" }),
                             React.createElement("div", { className: "InnerR" })
@@ -602,6 +636,68 @@ var Content = function (_React$Component7) {
     }]);
 
     return Content;
+}(React.Component);
+
+var Title = function (_React$Component8) {
+    _inherits(Title, _React$Component8);
+
+    function Title() {
+        _classCallCheck(this, Title);
+
+        return _possibleConstructorReturn(this, (Title.__proto__ || Object.getPrototypeOf(Title)).apply(this, arguments));
+    }
+
+    _createClass(Title, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "Title" },
+                this.props.name,
+                React.createElement(
+                    "a",
+                    { href: "https://www.baidu.com" },
+                    "\u66F4\u591A"
+                ),
+                React.createElement("hr", null)
+            );
+        }
+    }]);
+
+    return Title;
+}(React.Component);
+
+var Evaluation = function (_React$Component9) {
+    _inherits(Evaluation, _React$Component9);
+
+    function Evaluation() {
+        _classCallCheck(this, Evaluation);
+
+        return _possibleConstructorReturn(this, (Evaluation.__proto__ || Object.getPrototypeOf(Evaluation)).apply(this, arguments));
+    }
+
+    _createClass(Evaluation, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "Evaluation" },
+                React.createElement("img", { src: this.props.src }),
+                React.createElement(
+                    "div",
+                    { className: "ed1" },
+                    this.props.content
+                ),
+                React.createElement(
+                    "div",
+                    { className: "ed2" },
+                    this.props.grade
+                )
+            );
+        }
+    }]);
+
+    return Evaluation;
 }(React.Component);
 
 ReactDOM.render(React.createElement(Root, null), document.getElementById("root"));

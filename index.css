@@ -144,7 +144,6 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     float: left;
     width: 412px;
     height: 1000px;
-    background-color: aqua;
 }
 .InnerM{
     float: left;
@@ -155,7 +154,6 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     float: left;
     width: 400px;
     height: 1000px;
-    background-color: mediumaquamarine;
 }
 .ban img{
     width: 77px;
@@ -175,4 +173,51 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     width: 412px;
     height: 120px;
     top: 761px;
+}
+.Title a{
+    float: right;
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+}
+.Title a:link {color:lightgray;text-decoration:none;}		/* 未被访问的链接 */
+.Title a:visited {color:lightgray;text-decoration:none;}	/* 已被访问的链接 */
+.Title a:hover {color:lightgray;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+.Title a:active {color:lightgray;text-decoration:none;}	/* 正在被点击的链接 */
+.Evaluation img{
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+.Evaluation{
+    width: 412px;
+    height: 50px;
+    background-color: lightgray;
+    margin-top: 10px;
+}
+.dota a{
+    width: 297px;
+    height: 83px;
+    display: block;
+    float: left;
+}
+.dota div{
+    width: 115px;
+    float: left;
+}
+.dota{
+    width: 412px;
+    height: 83px;
+}
+.ed1{
+    width: 231px;
+    float: left;
+    font-size: 12px;
+}
+.ed2{
+    width: 80px;
+    float: left;
+    border-left: solid gray 1px;
+    height: 40px;
+    margin: 5px 0 5px 0;
+    text-align: center;
 }
