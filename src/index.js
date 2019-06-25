@@ -273,6 +273,45 @@ class Content extends React.Component {
                                     <VoteLi color="red" number="159" all="187" content="我一直使用游戏MOD，这使我玩游戏的趣味性大大增加。" />
                                     <VoteLi color="green" number="10" all="187" content="我不知道也不关心游戏MOD，和我没关系。" />
                                 </div>
+                                <div>
+                                    <Title name="硬件设备" />
+                                    <div className="hard">
+                                        <div className="titleimg">
+                                            <a href="https://www.baidu.com" className="leftimg">
+                                                <img src="static\car.jpg" />
+                                                <div className="titlefont">
+                                                    iGame G-ONE 3A大作全体验:高
+                                            </div>
+                                            </a>
+                                            <a href="https://www.baidu.com" className="rightimg">
+                                                <img src="static\car.jpg" />
+                                                <div className="titlefont">
+                                                    AORUS KD25F评测：240Hz主动
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.baidu.com">
+                                                    <div className="titlecon">iGame G-ONE 3A大作全体验:高集成度的游戏多面手</div>
+                                                    <div className="titleti">06-25</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.baidu.com">
+                                                    <div className="titlecon">神仙颜值 窒息速度 一张图读懂影驰HOF PRO M.2</div>
+                                                    <div className="titleti">06-25</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.baidu.com">
+                                                    <div className="titlecon">战锤系列首款暗黑破坏神风格的ABPG游戏？</div>
+                                                    <div className="titleti">06-25</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div className="InnerM">
 

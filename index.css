@@ -149,6 +149,8 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     float: left;
     width: 388px;
     height: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .InnerR{
     float: left;
@@ -256,4 +258,31 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 }
 .VoteLi p{
     font-size: 12px;
+}
+.hard img{
+    width: 198px;
+    height: 110px;
+}
+.titlefont{
+    font-size: 12px;
+}
+.leftimg{
+    float: left;
+}
+.rightimg{
+    float: right;
+}
+.titleimg{
+    width: 412px;
+    height: 170px;
+}
+.titlecon{
+    font-size: 14px;
+    float: left;
+}
+.titleti{
+    float: right;
+}
+.hard ul{
+    padding-left: 20px;
 }

@@ -651,6 +651,97 @@ var Content = function (_React$Component7) {
                                     React.createElement(VoteLi, { color: "blue", number: "18", all: "187", content: "\u6211\u77E5\u9053\u4F46\u6211\u4E0D\u7528MOD\uFF0C\u6E38\u620F\u4E0D\u5E94\u8BE5\u90A3\u4E48\u82B1\u91CC\u80E1\u54E8\u3002" }),
                                     React.createElement(VoteLi, { color: "red", number: "159", all: "187", content: "\u6211\u4E00\u76F4\u4F7F\u7528\u6E38\u620FMOD\uFF0C\u8FD9\u4F7F\u6211\u73A9\u6E38\u620F\u7684\u8DA3\u5473\u6027\u5927\u5927\u589E\u52A0\u3002" }),
                                     React.createElement(VoteLi, { color: "green", number: "10", all: "187", content: "\u6211\u4E0D\u77E5\u9053\u4E5F\u4E0D\u5173\u5FC3\u6E38\u620FMOD\uFF0C\u548C\u6211\u6CA1\u5173\u7CFB\u3002" })
+                                ),
+                                React.createElement(
+                                    "div",
+                                    null,
+                                    React.createElement(Title, { name: "\u786C\u4EF6\u8BBE\u5907" }),
+                                    React.createElement(
+                                        "div",
+                                        { className: "hard" },
+                                        React.createElement(
+                                            "div",
+                                            { className: "titleimg" },
+                                            React.createElement(
+                                                "a",
+                                                { href: "https://www.baidu.com", className: "leftimg" },
+                                                React.createElement("img", { src: "static\\car.jpg" }),
+                                                React.createElement(
+                                                    "div",
+                                                    { className: "titlefont" },
+                                                    "iGame G-ONE 3A\u5927\u4F5C\u5168\u4F53\u9A8C:\u9AD8"
+                                                )
+                                            ),
+                                            React.createElement(
+                                                "a",
+                                                { href: "https://www.baidu.com", className: "rightimg" },
+                                                React.createElement("img", { src: "static\\car.jpg" }),
+                                                React.createElement(
+                                                    "div",
+                                                    { className: "titlefont" },
+                                                    "AORUS KD25F\u8BC4\u6D4B\uFF1A240Hz\u4E3B\u52A8"
+                                                )
+                                            )
+                                        ),
+                                        React.createElement(
+                                            "ul",
+                                            null,
+                                            React.createElement(
+                                                "li",
+                                                null,
+                                                React.createElement(
+                                                    "a",
+                                                    { href: "https://www.baidu.com" },
+                                                    React.createElement(
+                                                        "div",
+                                                        { className: "titlecon" },
+                                                        "iGame G-ONE 3A\u5927\u4F5C\u5168\u4F53\u9A8C:\u9AD8\u96C6\u6210\u5EA6\u7684\u6E38\u620F\u591A\u9762\u624B"
+                                                    ),
+                                                    React.createElement(
+                                                        "div",
+                                                        { className: "titleti" },
+                                                        "06-25"
+                                                    )
+                                                )
+                                            ),
+                                            React.createElement(
+                                                "li",
+                                                null,
+                                                React.createElement(
+                                                    "a",
+                                                    { href: "https://www.baidu.com" },
+                                                    React.createElement(
+                                                        "div",
+                                                        { className: "titlecon" },
+                                                        "\u795E\u4ED9\u989C\u503C \u7A92\u606F\u901F\u5EA6 \u4E00\u5F20\u56FE\u8BFB\u61C2\u5F71\u9A70HOF PRO M.2"
+                                                    ),
+                                                    React.createElement(
+                                                        "div",
+                                                        { className: "titleti" },
+                                                        "06-25"
+                                                    )
+                                                )
+                                            ),
+                                            React.createElement(
+                                                "li",
+                                                null,
+                                                React.createElement(
+                                                    "a",
+                                                    { href: "https://www.baidu.com" },
+                                                    React.createElement(
+                                                        "div",
+                                                        { className: "titlecon" },
+                                                        "\u6218\u9524\u7CFB\u5217\u9996\u6B3E\u6697\u9ED1\u7834\u574F\u795E\u98CE\u683C\u7684ABPG\u6E38\u620F\uFF1F"
+                                                    ),
+                                                    React.createElement(
+                                                        "div",
+                                                        { className: "titleti" },
+                                                        "06-25"
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
                                 )
                             ),
                             React.createElement("div", { className: "InnerM" }),
