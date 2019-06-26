@@ -286,3 +286,43 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
 .hard ul{
     padding-left: 20px;
 }
+.Toutiao a p{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+.blue1{
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 15px;
+    width: 193px;
+    text-align: center;
+}
+.blue2{
+    display: block;
+    float: right;
+    font-size: 12px;
+    height: 15px;
+    width: 194px;
+    text-align: center;
+}
+.blue1 div{
+    border-right: solid lightgray 1px;
+}
+.News{
+    height: 40px;
+    margin-top:10px;
+}
+.newsleft{
+    width: 90%;
+    float: left;
+    font-size: 14px;
+}
+.newsright{
+    width: 10%;
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    color: lightgray;
+}

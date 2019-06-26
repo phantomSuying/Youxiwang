@@ -314,7 +314,18 @@ class Content extends React.Component {
                                 </div>
                             </div>
                             <div className="InnerM">
-
+                                <Toutiao
+                                    red1="Steam2019年夏促来了 哪些游戏值得买"
+                                    blue1="《魔法门之英雄无敌：王朝》评测"
+                                    blue2="韩国法案打击游戏代练" />
+                                <Toutiao
+                                    red1="专访《拳皇》世界冠军"
+                                    blue1="《暴雨》PC版正式发售"
+                                    blue2="《速度与激情9》正式开拍"
+                                />
+                                <div style={{ borderBottom: 'dashed lightgray 1px' }} />
+                                <News content="《鬼泣1》各版本画面比拼 NS与Xbox360不相上下"
+                                    time="13:29" />
                             </div>
                             <div className="InnerR">
 
@@ -370,6 +381,47 @@ class VoteLi extends React.Component {
                 <button>投票</button>
                 <p>{this.props.content}</p>
 
+            </div>
+        );
+    }
+}
+class Toutiao extends React.Component {
+    render() {
+        return (
+            <div className="Toutiao">
+                <a href="https://www.baidu.com">
+                    <p>
+                        {this.props.red1}
+                    </p>
+                </a>
+                <div style={{ height: 20 }}>
+                    <a href="https://www.baidu.com" className="blue1">
+                        <div>
+                            {this.props.blue1}
+                        </div>
+                    </a>
+                    <a href="https://www.baidu.com" className="blue2">
+                        <div>
+                            {this.props.blue2}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        );
+    }
+}
+class News extends React.Component {
+    render() {
+        return (
+            <div className="News">
+                <div className="newsleft">
+                    <a href="https://www.baidu.com">
+                        {this.props.content}
+                    </a>
+                </div>
+                <div className="newsright">
+                    {this.props.time}
+                </div>
             </div>
         );
     }

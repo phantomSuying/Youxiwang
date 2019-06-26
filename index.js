@@ -744,7 +744,22 @@ var Content = function (_React$Component7) {
                                     )
                                 )
                             ),
-                            React.createElement("div", { className: "InnerM" }),
+                            React.createElement(
+                                "div",
+                                { className: "InnerM" },
+                                React.createElement(Toutiao, {
+                                    red1: "Steam2019\u5E74\u590F\u4FC3\u6765\u4E86 \u54EA\u4E9B\u6E38\u620F\u503C\u5F97\u4E70",
+                                    blue1: "\u300A\u9B54\u6CD5\u95E8\u4E4B\u82F1\u96C4\u65E0\u654C\uFF1A\u738B\u671D\u300B\u8BC4\u6D4B",
+                                    blue2: "\u97E9\u56FD\u6CD5\u6848\u6253\u51FB\u6E38\u620F\u4EE3\u7EC3" }),
+                                React.createElement(Toutiao, {
+                                    red1: "\u4E13\u8BBF\u300A\u62F3\u7687\u300B\u4E16\u754C\u51A0\u519B",
+                                    blue1: "\u300A\u66B4\u96E8\u300BPC\u7248\u6B63\u5F0F\u53D1\u552E",
+                                    blue2: "\u300A\u901F\u5EA6\u4E0E\u6FC0\u60C59\u300B\u6B63\u5F0F\u5F00\u62CD"
+                                }),
+                                React.createElement("div", { style: { borderBottom: 'dashed lightgray 1px' } }),
+                                React.createElement(News, { content: "\u300A\u9B3C\u6CE31\u300B\u5404\u7248\u672C\u753B\u9762\u6BD4\u62FC NS\u4E0EXbox360\u4E0D\u76F8\u4E0A\u4E0B",
+                                    time: "13:29" })
+                            ),
                             React.createElement("div", { className: "InnerR" })
                         )
                     )
@@ -862,6 +877,95 @@ var VoteLi = function (_React$Component10) {
     }]);
 
     return VoteLi;
+}(React.Component);
+
+var Toutiao = function (_React$Component11) {
+    _inherits(Toutiao, _React$Component11);
+
+    function Toutiao() {
+        _classCallCheck(this, Toutiao);
+
+        return _possibleConstructorReturn(this, (Toutiao.__proto__ || Object.getPrototypeOf(Toutiao)).apply(this, arguments));
+    }
+
+    _createClass(Toutiao, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "Toutiao" },
+                React.createElement(
+                    "a",
+                    { href: "https://www.baidu.com" },
+                    React.createElement(
+                        "p",
+                        null,
+                        this.props.red1
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { style: { height: 20 } },
+                    React.createElement(
+                        "a",
+                        { href: "https://www.baidu.com", className: "blue1" },
+                        React.createElement(
+                            "div",
+                            null,
+                            this.props.blue1
+                        )
+                    ),
+                    React.createElement(
+                        "a",
+                        { href: "https://www.baidu.com", className: "blue2" },
+                        React.createElement(
+                            "div",
+                            null,
+                            this.props.blue2
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Toutiao;
+}(React.Component);
+
+var News = function (_React$Component12) {
+    _inherits(News, _React$Component12);
+
+    function News() {
+        _classCallCheck(this, News);
+
+        return _possibleConstructorReturn(this, (News.__proto__ || Object.getPrototypeOf(News)).apply(this, arguments));
+    }
+
+    _createClass(News, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "News" },
+                React.createElement(
+                    "div",
+                    { className: "newsleft" },
+                    React.createElement(
+                        "a",
+                        { href: "https://www.baidu.com" },
+                        this.props.content
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "newsright" },
+                    this.props.time
+                )
+            );
+        }
+    }]);
+
+    return News;
 }(React.Component);
 
 ReactDOM.render(React.createElement(Root, null), document.getElementById("root"));
