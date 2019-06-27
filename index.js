@@ -492,8 +492,205 @@ var Ban = function (_React$Component6) {
     return Ban;
 }(React.Component);
 
-var Content = function (_React$Component7) {
-    _inherits(Content, _React$Component7);
+var Title = function (_React$Component7) {
+    _inherits(Title, _React$Component7);
+
+    function Title() {
+        _classCallCheck(this, Title);
+
+        return _possibleConstructorReturn(this, (Title.__proto__ || Object.getPrototypeOf(Title)).apply(this, arguments));
+    }
+
+    _createClass(Title, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "Title" },
+                this.props.name,
+                React.createElement(
+                    "a",
+                    { href: "https://www.baidu.com" },
+                    "\u66F4\u591A"
+                ),
+                React.createElement("hr", null)
+            );
+        }
+    }]);
+
+    return Title;
+}(React.Component);
+
+var Evaluation = function (_React$Component8) {
+    _inherits(Evaluation, _React$Component8);
+
+    function Evaluation() {
+        _classCallCheck(this, Evaluation);
+
+        return _possibleConstructorReturn(this, (Evaluation.__proto__ || Object.getPrototypeOf(Evaluation)).apply(this, arguments));
+    }
+
+    _createClass(Evaluation, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "Evaluation" },
+                React.createElement("img", { src: this.props.src }),
+                React.createElement(
+                    "div",
+                    { className: "ed1" },
+                    this.props.content
+                ),
+                React.createElement(
+                    "div",
+                    { className: "ed2" },
+                    this.props.grade
+                )
+            );
+        }
+    }]);
+
+    return Evaluation;
+}(React.Component);
+
+var VoteLi = function (_React$Component9) {
+    _inherits(VoteLi, _React$Component9);
+
+    function VoteLi() {
+        _classCallCheck(this, VoteLi);
+
+        return _possibleConstructorReturn(this, (VoteLi.__proto__ || Object.getPrototypeOf(VoteLi)).apply(this, arguments));
+    }
+
+    _createClass(VoteLi, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "VoteLi" },
+                React.createElement(
+                    "div",
+                    { className: "sliver" },
+                    React.createElement("div", { style: {
+                            backgroundColor: this.props.color,
+                            width: 100 * this.props.number / this.props.all + '%',
+                            height: 10
+                        } })
+                ),
+                React.createElement(
+                    "div",
+                    { className: "voteNum" },
+                    this.props.number
+                ),
+                React.createElement(
+                    "button",
+                    null,
+                    "\u6295\u7968"
+                ),
+                React.createElement(
+                    "p",
+                    null,
+                    this.props.content
+                )
+            );
+        }
+    }]);
+
+    return VoteLi;
+}(React.Component);
+
+var Toutiao = function (_React$Component10) {
+    _inherits(Toutiao, _React$Component10);
+
+    function Toutiao() {
+        _classCallCheck(this, Toutiao);
+
+        return _possibleConstructorReturn(this, (Toutiao.__proto__ || Object.getPrototypeOf(Toutiao)).apply(this, arguments));
+    }
+
+    _createClass(Toutiao, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "Toutiao" },
+                React.createElement(
+                    "a",
+                    { href: "https://www.baidu.com" },
+                    React.createElement(
+                        "p",
+                        null,
+                        this.props.red1
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { style: { height: 20 } },
+                    React.createElement(
+                        "a",
+                        { href: "https://www.baidu.com", className: "blue1" },
+                        React.createElement(
+                            "div",
+                            null,
+                            this.props.blue1
+                        )
+                    ),
+                    React.createElement(
+                        "a",
+                        { href: "https://www.baidu.com", className: "blue2" },
+                        React.createElement(
+                            "div",
+                            null,
+                            this.props.blue2
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Toutiao;
+}(React.Component);
+
+var News = function (_React$Component11) {
+    _inherits(News, _React$Component11);
+
+    function News() {
+        _classCallCheck(this, News);
+
+        return _possibleConstructorReturn(this, (News.__proto__ || Object.getPrototypeOf(News)).apply(this, arguments));
+    }
+
+    _createClass(News, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "News" },
+                React.createElement(
+                    "div",
+                    { className: "newsleft" },
+                    React.createElement(
+                        "a",
+                        { href: "https://www.baidu.com" },
+                        this.props.children
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "newsright" },
+                    this.props.time
+                )
+            );
+        }
+    }]);
+
+    return News;
+}(React.Component);
+
+var Content = function (_React$Component12) {
+    _inherits(Content, _React$Component12);
 
     function Content() {
         _classCallCheck(this, Content);
@@ -510,7 +707,11 @@ var Content = function (_React$Component7) {
             var gameList4 = ["暴走萌姬", "三十六计", "绯雨骑士团", "三国杀", "武林三", "唐门六道", "荒野求生", "文字修真", "斗罗大陆", "妖怪宝可萌", "王的崛起", "我和我的影子"];
             var gameList5 = ["仙剑奇侠传七", "沉没之城", "骑马与砍杀2", "幽灵行动：断点", "赛博朋克2077", "轩辕剑7", "无主之地3", "暗黑血统：创世纪", "血污：夜之仪式", "丝绸之歌", "魔兽争霸3"];
             var gameList6 = ["怪猎", "圣女战旗", "堡垒之夜", "武魂2", "地下城与勇士", "腾讯电竞", "FIFA ONLINE 4", "完美世界手游", "只狼", "生化危机2重制版", "全面战争三国", "使命召唤16"];
-
+            var news = ["迅雷会员官网推出新活动 买328元玩客云送终身会员", "为让《使命召唤》上头条而宣传争议内容？ IW回应", "《宝可梦》公司5年收益上涨12倍 吸金能力令人瞠目", " 游戏界3巨头反对美国关税政策引关注 登微博热搜榜", "除了的Stadia，我们还能期待云端的《逆水寒》", " 人民网倡议玩家“分级” 18+禁止暴力血腥内容", "《控制》最新演示 讲解如何击败首要敌人“The Hiss”", " 换脸视频后AI又出偏门应用 用算法“脱掉”女性衣服", "凯蒂猫首部好莱坞大片编剧确定 上映日期未定", "《逆水寒》全新资料片今日上线 号召玩家混江湖", "套用《八方旅人》背景图？ 《一剑断念》被指抄袭", "《战地5》又出新彩蛋！玩家游戏中建造云端天梯", "在NS上感受大人的游戏 卡普空“大人的名作”宣传片", "优衣库将推出新海诚电影联动UT 8月中旬开卖！", " 押井守全新动画电影《VLADLOVE》公布 2020年上映", "如果这项技术让I社得到，那就完了", " 国内首部互动动画《石膏岛》——“凝固你的记忆”", "《魔兽世界》全新版本“艾萨拉的崛起”现已上线", "神崎堇变身女总裁！《新樱花大战》新角色详情公布", "小紫本特惠助力 《DOTA2》Ti9奖金突破2000万美元", "《全面战争：三国》最新长演示 展示血腥DLC细节", "经典复归 PC版《暴雨》前18分钟游戏画面展示", "小松鼠大冒险！《冰河世纪》改编3D平台冒险游戏公布", "《猛禽小队》哈莉奎茵新造型 穿粉红背心金色背带裤"];
+            var discussions = ["传奇巨星MJ去世10周年 世嘉放出超珍贵MJ玩MD照片", "人民网倡议玩家“分级” 18+禁止暴力血腥内容", "《暴雨》PC版正式发售 Epic商城独占疑似锁国区", "《原神》制作组致玩家的一封信 称向多方学习", "腾讯《无限法则》Steam正式版发售 登陆领限定皮肤", "腾讯首款国创暗黑手游上线 暗黑2设计师出任监制"];
+            var newGame = ["侍魂 晓", "我的朋友佩德罗", "赤痕：夜之仪式", "节奏海拉鲁", "歧路旅人"];
+            var chinese = ["《地狱猎人》", "《层层恐惧2》", "《食人女孩2+》", "《猪兔大战HD重制版》"];
+            var comming = ["超级马里奥制造2", " 火焰纹章：风花雪月", " 德军总部：新血液", " 控制", " 塞尔达传说：织梦岛"];
             return React.createElement(
                 "div",
                 { className: "Content" },
@@ -757,10 +958,108 @@ var Content = function (_React$Component7) {
                                     blue2: "\u300A\u901F\u5EA6\u4E0E\u6FC0\u60C59\u300B\u6B63\u5F0F\u5F00\u62CD"
                                 }),
                                 React.createElement("div", { style: { borderBottom: 'dashed lightgray 1px' } }),
-                                React.createElement(News, { content: "\u300A\u9B3C\u6CE31\u300B\u5404\u7248\u672C\u753B\u9762\u6BD4\u62FC NS\u4E0EXbox360\u4E0D\u76F8\u4E0A\u4E0B",
-                                    time: "13:29" })
+                                news.map(function (item) {
+                                    return React.createElement(
+                                        News,
+                                        { key: item.toString(), time: "11:00" },
+                                        item
+                                    );
+                                }),
+                                React.createElement(Title, { name: "\u70ED\u95E8\u56DE\u987E" }),
+                                discussions.map(function (item) {
+                                    return React.createElement(
+                                        News,
+                                        { key: item.toString(), time: "88" },
+                                        item
+                                    );
+                                })
                             ),
-                            React.createElement("div", { className: "InnerR" })
+                            React.createElement(
+                                "div",
+                                { className: "InnerR" },
+                                React.createElement(
+                                    "div",
+                                    { style: { border: 'solid gray 1px', textAlign: 'center', height: 350 } },
+                                    React.createElement(
+                                        "p",
+                                        null,
+                                        "3DM\u5A92\u4F53\u4FE1\u606F"
+                                    ),
+                                    React.createElement(
+                                        "a",
+                                        { href: "https://www.baidu.com" },
+                                        React.createElement("img", { src: "static\\car.jpg", style: { width: 200, height: 40 } })
+                                    ),
+                                    React.createElement(
+                                        "a",
+                                        { href: "https://www.baidu.com" },
+                                        React.createElement("img", { src: "static\\car.jpg", style: { width: 200, height: 40 } })
+                                    ),
+                                    React.createElement(
+                                        "div",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { style: {
+                                                    float: 'left'
+                                                } },
+                                            React.createElement("img", { src: "static\\car.jpg",
+                                                style: {
+                                                    width: 74,
+                                                    height: 60
+                                                } }),
+                                            React.createElement(
+                                                "p",
+                                                null,
+                                                "\u65B0\u6D6A\u5FAE\u535A"
+                                            ),
+                                            React.createElement(
+                                                "p",
+                                                null,
+                                                "\u8D26\u53F7:3dmgame"
+                                            )
+                                        ),
+                                        React.createElement(
+                                            "a",
+                                            { style: {
+                                                    float: 'right'
+                                                } },
+                                            React.createElement("img", { src: "static\\car.jpg",
+                                                style: {
+                                                    width: 74,
+                                                    height: 60
+                                                } }),
+                                            React.createElement(
+                                                "p",
+                                                null,
+                                                "\u5FAE\u4FE1\u516C\u4F17\u53F7"
+                                            ),
+                                            React.createElement(
+                                                "p",
+                                                null,
+                                                "\u8D26\u53F7:sdmgame"
+                                            )
+                                        )
+                                    )
+                                ),
+                                React.createElement(Title, { name: "\u8FD1\u671F\u65B0\u4F5C" }),
+                                newGame.map(function (item) {
+                                    return React.createElement(
+                                        News,
+                                        { key: item.toString(), time: "\u7B80\u4E2D" },
+                                        item
+                                    );
+                                }),
+                                React.createElement(Title, { name: "\u6C49\u5316\u53D1\u5E03" }),
+                                chinese.map(function (item) {
+                                    return React.createElement(
+                                        News,
+                                        { key: item.toString(), time: "\u4E2D\u6587\u514D\u5B89\u88C5\u7248" },
+                                        item
+                                    );
+                                }),
+                                React.createElement(Title, { name: "\u5373\u5C06\u53D1\u5E03" })
+                            )
                         )
                     )
                 )
@@ -769,203 +1068,6 @@ var Content = function (_React$Component7) {
     }]);
 
     return Content;
-}(React.Component);
-
-var Title = function (_React$Component8) {
-    _inherits(Title, _React$Component8);
-
-    function Title() {
-        _classCallCheck(this, Title);
-
-        return _possibleConstructorReturn(this, (Title.__proto__ || Object.getPrototypeOf(Title)).apply(this, arguments));
-    }
-
-    _createClass(Title, [{
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "div",
-                { className: "Title" },
-                this.props.name,
-                React.createElement(
-                    "a",
-                    { href: "https://www.baidu.com" },
-                    "\u66F4\u591A"
-                ),
-                React.createElement("hr", null)
-            );
-        }
-    }]);
-
-    return Title;
-}(React.Component);
-
-var Evaluation = function (_React$Component9) {
-    _inherits(Evaluation, _React$Component9);
-
-    function Evaluation() {
-        _classCallCheck(this, Evaluation);
-
-        return _possibleConstructorReturn(this, (Evaluation.__proto__ || Object.getPrototypeOf(Evaluation)).apply(this, arguments));
-    }
-
-    _createClass(Evaluation, [{
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "div",
-                { className: "Evaluation" },
-                React.createElement("img", { src: this.props.src }),
-                React.createElement(
-                    "div",
-                    { className: "ed1" },
-                    this.props.content
-                ),
-                React.createElement(
-                    "div",
-                    { className: "ed2" },
-                    this.props.grade
-                )
-            );
-        }
-    }]);
-
-    return Evaluation;
-}(React.Component);
-
-var VoteLi = function (_React$Component10) {
-    _inherits(VoteLi, _React$Component10);
-
-    function VoteLi() {
-        _classCallCheck(this, VoteLi);
-
-        return _possibleConstructorReturn(this, (VoteLi.__proto__ || Object.getPrototypeOf(VoteLi)).apply(this, arguments));
-    }
-
-    _createClass(VoteLi, [{
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "div",
-                { className: "VoteLi" },
-                React.createElement(
-                    "div",
-                    { className: "sliver" },
-                    React.createElement("div", { style: {
-                            backgroundColor: this.props.color,
-                            width: 100 * this.props.number / this.props.all + '%',
-                            height: 10
-                        } })
-                ),
-                React.createElement(
-                    "div",
-                    { className: "voteNum" },
-                    this.props.number
-                ),
-                React.createElement(
-                    "button",
-                    null,
-                    "\u6295\u7968"
-                ),
-                React.createElement(
-                    "p",
-                    null,
-                    this.props.content
-                )
-            );
-        }
-    }]);
-
-    return VoteLi;
-}(React.Component);
-
-var Toutiao = function (_React$Component11) {
-    _inherits(Toutiao, _React$Component11);
-
-    function Toutiao() {
-        _classCallCheck(this, Toutiao);
-
-        return _possibleConstructorReturn(this, (Toutiao.__proto__ || Object.getPrototypeOf(Toutiao)).apply(this, arguments));
-    }
-
-    _createClass(Toutiao, [{
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "div",
-                { className: "Toutiao" },
-                React.createElement(
-                    "a",
-                    { href: "https://www.baidu.com" },
-                    React.createElement(
-                        "p",
-                        null,
-                        this.props.red1
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { style: { height: 20 } },
-                    React.createElement(
-                        "a",
-                        { href: "https://www.baidu.com", className: "blue1" },
-                        React.createElement(
-                            "div",
-                            null,
-                            this.props.blue1
-                        )
-                    ),
-                    React.createElement(
-                        "a",
-                        { href: "https://www.baidu.com", className: "blue2" },
-                        React.createElement(
-                            "div",
-                            null,
-                            this.props.blue2
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Toutiao;
-}(React.Component);
-
-var News = function (_React$Component12) {
-    _inherits(News, _React$Component12);
-
-    function News() {
-        _classCallCheck(this, News);
-
-        return _possibleConstructorReturn(this, (News.__proto__ || Object.getPrototypeOf(News)).apply(this, arguments));
-    }
-
-    _createClass(News, [{
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "div",
-                { className: "News" },
-                React.createElement(
-                    "div",
-                    { className: "newsleft" },
-                    React.createElement(
-                        "a",
-                        { href: "https://www.baidu.com" },
-                        this.props.content
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { className: "newsright" },
-                    this.props.time
-                )
-            );
-        }
-    }]);
-
-    return News;
 }(React.Component);
 
 ReactDOM.render(React.createElement(Root, null), document.getElementById("root"));

@@ -153,8 +153,8 @@ a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
     padding-right: 10px;
 }
 .InnerR{
-    float: left;
-    width: 400px;
+    float: right;
+    width: 380px;
     height: 1000px;
 }
 .ban img{
