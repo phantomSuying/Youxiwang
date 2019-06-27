@@ -516,7 +516,7 @@ class Content extends React.Component {
                                 <Title name="汉化发布" />
                                 {chinese.map(item => (<News key={item.toString()} time="中文免安装版">{item}</News>))}
                                 <Title name="即将发布" />
-
+                                {comming.map(item => (<News key={item.toString()} time="">{item}</News>))}
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,328 @@
+/* element */
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+a:link {color:white;text-decoration:none;}		/* 未被访问的链接 */
+a:visited {color:white;text-decoration:none;}	/* 已被访问的链接 */
+a:hover {color:gray;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+a:active {color:gray;text-decoration:none;}	/* 正在被点击的链接 */
+
+.Content a:link {color:black;text-decoration:none;}		/* 未被访问的链接 */
+.Content a:visited {color:black;text-decoration:none;}	/* 已被访问的链接 */
+.Content a:hover {color:red;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+.Content a:active {color:red;text-decoration:none;}	/* 正在被点击的链接 */
+
+.twhi a:link {color:gray;text-decoration:none;}		/* 未被访问的链接 */
+.twhi a:visited {color:gray;text-decoration:none;}	/* 已被访问的链接 */
+.twhi a:hover {color:white;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+.twhi a:active {color:white;text-decoration:none;}	/* 正在被点击的链接 */
+/* class:. */
+.ico1 {
+    margin: -10px 0 -70px 0;
+}
+
+.ico2 {
+    margin: -50px 0 -53px 0;
+}
+
+.ico4 {
+    margin: -68px 0 -30px 0;
+}
+
+.ico3 {
+    margin: -65px 0 -10px 0;
+}
+
+.nav {
+    overflow: hidden;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+}
+
+.nav a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.login {
+    float: right;
+}
+.login a,span{
+    position: relative;
+    top: -4px;
+}
+
+
+
+.headerBg {
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 300px;
+    top: 40px;
+}
+.Search{
+    padding: 65px 0 65px 0;
+    background: url(static/header_bg.jpg) 1920px 130px;
+}
+.Search form {
+    float: right;
+}
+.Navi{
+    height: 53px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Navi ul{
+    float: left;
+    padding-inline-start: 0;
+}
+.Navi ol{
+    float: right;
+}
+.Navi li{
+    list-style-type: none;
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+.center{
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+}
+.GameLine{
+    width: 1152px;
+    font-size: 12px;
+    margin: auto;
+    height: 42px;
+}
+.GameLineHead{
+    padding: 5px 12px 5px 12px;
+    background-color: pink;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.GameLine ul{
+    float: left;
+}
+.GameLine li{
+    list-style-type: none;
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+.FastLink{
+    width: 1200px;
+}
+.Content{
+    height: 5000px;
+    background-image: url("static/defaultbg.jpg");
+    padding: 10px 0 0 0;
+}
+.Main{
+    background-color: white;
+    height: 2000px;
+}
+.top{
+    background: orange;
+    padding: 5px 0 5px 0;
+}
+.top a{
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+}
+.InnerL{
+    float: left;
+    width: 412px;
+    height: 1000px;
+}
+.InnerM{
+    float: left;
+    width: 388px;
+    height: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.InnerR{
+    float: right;
+    width: 380px;
+    height: 1000px;
+}
+.ban img{
+    width: 77px;
+    height: 54px;
+    border: solid transparent 1px;
+    margin: 0 1px 0 2px;
+    position: relative;
+    top: 80%;
+}
+.ban{
+    width: 412px;
+    height: 380px;
+}
+.transBack{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 412px;
+    height: 120px;
+    top: 761px;
+}
+.Title a{
+    float: right;
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+}
+.Title a:link {color:lightgray;text-decoration:none;}		/* 未被访问的链接 */
+.Title a:visited {color:lightgray;text-decoration:none;}	/* 已被访问的链接 */
+.Title a:hover {color:lightgray;text-decoration:none;}	/* 鼠标指针移动到链接上 */
+.Title a:active {color:lightgray;text-decoration:none;}	/* 正在被点击的链接 */
+.Evaluation img{
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+.Evaluation{
+    width: 412px;
+    height: 50px;
+    background-color: lightgray;
+    margin-top: 10px;
+}
+.dota a{
+    width: 297px;
+    height: 83px;
+    display: block;
+    float: left;
+}
+.dota div{
+    width: 115px;
+    float: left;
+}
+.dota{
+    width: 412px;
+    height: 83px;
+}
+.ed1{
+    width: 231px;
+    float: left;
+    font-size: 12px;
+}
+.ed2{
+    width: 80px;
+    float: left;
+    border-left: solid gray 1px;
+    height: 40px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+.vote{
+    height: 100px;
+}
+.vote img{
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+.vote a div{
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+}
+.brief{
+    float: left;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+}
+.sliver{
+    background-color: lightgray;
+    height: 10px;
+    width: 300px;
+    float: left;
+}
+.voteNum{
+    float: left;
+    width: 66px;
+}
+.VoteLi button{
+    float: right;
+}
+.VoteLi p{
+    font-size: 12px;
+}
+.hard img{
+    width: 198px;
+    height: 110px;
+}
+.titlefont{
+    font-size: 12px;
+}
+.leftimg{
+    float: left;
+}
+.rightimg{
+    float: right;
+}
+.titleimg{
+    width: 412px;
+    height: 170px;
+}
+.titlecon{
+    font-size: 14px;
+    float: left;
+}
+.titleti{
+    float: right;
+}
+.hard ul{
+    padding-left: 20px;
+}
+.Toutiao a p{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+.blue1{
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 15px;
+    width: 193px;
+    text-align: center;
+}
+.blue2{
+    display: block;
+    float: right;
+    font-size: 12px;
+    height: 15px;
+    width: 194px;
+    text-align: center;
+}
+.blue1 div{
+    border-right: solid lightgray 1px;
+}
+.News{
+    height: 40px;
+    margin-top:10px;
+}
+.newsleft{
+    width: 90%;
+    float: left;
+    font-size: 14px;
+}
+.newsright{
+    width: 10%;
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    color: lightgray;
+}
